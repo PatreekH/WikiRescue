@@ -196,6 +196,7 @@ $("#submitName").on("click", function(){
                                 "<div id='animalTitle'><b>Age: </b>" + petData.petfinder.pets.pet[i].age.$t + "</div>" + "<br>" +
                                 "<div id='animalTitle'><b>Mix: </b>" + petData.petfinder.pets.pet[i].mix.$t + "</div>" + "<br>" +
                                 "<div id='animalTitle'><b>Size: </b>" + petData.petfinder.pets.pet[i].size.$t + "</div>" + "<br>" +
+                                "<div id='animalTitle'><b>Click me to read more!</b></div>" + "<br>" +
 
                             "</span>" +
                             "</div>" +
