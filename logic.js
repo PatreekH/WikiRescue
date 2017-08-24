@@ -26,7 +26,7 @@ $(".typeDog").on("click", function(){
 var name = "dog"
 $(".nameOptions").fadeOut();
 $("#autofill").empty()
-$.getJSON('http://api.petfinder.com/breed.list?format=json&key=542589b85677d309b9e508711958b27a&animal=' + name + '&callback=?'
+$.getJSON('https://api.petfinder.com/breed.list?format=json&key=542589b85677d309b9e508711958b27a&animal=' + name + '&callback=?'
     ).done(function(dogData) { 
 
         console.log('Dog Breed Data retrieved!')
@@ -43,7 +43,7 @@ $(".typeCat").on("click", function(){
 var name = "cat"
 $(".nameOptions").fadeOut();
 $("#autofill").empty()
-$.getJSON('http://api.petfinder.com/breed.list?format=json&key=542589b85677d309b9e508711958b27a&animal=' + name + '&callback=?'
+$.getJSON('https://api.petfinder.com/breed.list?format=json&key=542589b85677d309b9e508711958b27a&animal=' + name + '&callback=?'
     ).done(function(catData) { 
 
         console.log('Cat Breed Data retrieved!')
@@ -60,7 +60,7 @@ $(".typeBird").on("click", function(){
 var name = "bird"
 $(".nameOptions").fadeOut();
 $("#autofill").empty()
-$.getJSON('http://api.petfinder.com/breed.list?format=json&key=542589b85677d309b9e508711958b27a&animal=' + name + '&callback=?'
+$.getJSON('https://api.petfinder.com/breed.list?format=json&key=542589b85677d309b9e508711958b27a&animal=' + name + '&callback=?'
     ).done(function(birdData) { 
 
         console.log('Bird Breed Data retrieved!')
@@ -101,7 +101,7 @@ $("#submitName").on("click", function(){
         initMap();
         });
 
-    var apiBreed = "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + breedType + "&callback=?";
+    var apiBreed = "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + breedType + "&callback=?";
     $.ajax({
         type: "GET",
         url: apiBreed,
@@ -126,7 +126,7 @@ $("#submitName").on("click", function(){
         }
     })
 
-    $.getJSON('http://api.petfinder.com/shelter.find?format=json&key=542589b85677d309b9e508711958b27a&count=7&location=' + zip + '&callback=?'
+    $.getJSON('https://api.petfinder.com/shelter.find?format=json&key=542589b85677d309b9e508711958b27a&count=7&location=' + zip + '&callback=?'
             ).done(function(shelterData) { 
             console.log('Shelter Data retrieved!')
             console.log(shelterData);
@@ -174,7 +174,7 @@ $("#submitName").on("click", function(){
 
             });
 
-    $.getJSON('http://api.petfinder.com/pet.find?format=json&key=542589b85677d309b9e508711958b27a&breed=' + breedType + '&location=' + zip + '&count=10&output=full&callback=?'
+    $.getJSON('https://api.petfinder.com/pet.find?format=json&key=542589b85677d309b9e508711958b27a&breed=' + breedType + '&location=' + zip + '&count=10&output=full&callback=?'
             ).done(function(petData) { 
 
             console.log('Pet Data retrieved!')
